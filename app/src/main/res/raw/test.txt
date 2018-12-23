@@ -1,0 +1,24 @@
+this is a test file.
+{
+	"pubKey":
+	[
+	{
+		"qaz": "MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQC/9KurFJlcV4lL4MjKMYIsfBiCf2z0ctOVW8NRkoY198ZaEtnlPxrjBFkna5cFhbpPjHdl3rIp + /tcbWTjqtUatsTnnA + YVkK5QAqiqtntDOt5in5rgVG4cFWaPOcHtg98k8aNrJ0z9XSfqQrQnPahsRdm +c1mlq7akslUn7f1OQIDAQAB "
+	},
+	{
+		"qwe": "MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCe0nzA+T25eR3tBa2eyzxIKhqoCH1pAVzRoyC9Tt5qO3OJ52xT06z + UholOH5hClseiiN + SpVgGA9JLXkfx0iYcQ / 5m6Ny7NKEet3T0IevHRIOcAhuEzY + TwitYpr5dCqJ6odTpb1CpGFpuWnGn9 / cg0BOsM0GRWsTT0xSDm1 + wQIDAQAB "
+	}
+	]
+}
+
+&)d_*2t*~n=#)1-a
+ while (inputLen - offSet > 0) {
+                if (inputLen - offSet > blockSize) {
+                    cache = cipher.doFinal(data, offSet, blockSize);
+                } else {
+                    cache = cipher.doFinal(data, offSet, inputLen - offSet);
+                }
+                out.write(cache, 0, cache.length);
+                i++;
+                offSet = i * blockSize;
+            }
